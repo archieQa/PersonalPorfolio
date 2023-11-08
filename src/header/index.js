@@ -10,16 +10,16 @@ const Headermain = () => {
 
   const handleToggle = () => {
     setActive(!isActive);
-    document.body.classList.toggle("ovhidden");
+    document.body.classList.toggle("ovhidden"); // calls the css to hide the navbar dropdown 
   };
 
   return (
     <>
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between">
-          <Link  className="navbar-brand nav_ac" to="/">
-            {logotext}
-          </Link>
+          <Link  className="navbar-brand nav_ac" to="/"> 
+            {logotext}  
+          </Link>   
           <div className="d-flex align-items-center">
           <Themetoggle />
           <button className="menu__button  nav_ac" onClick={handleToggle}>
@@ -54,8 +54,9 @@ const Headermain = () => {
             <div className="d-flex">
             <a href={socialprofils.linkedin}>LinkedIn</a>
             <a href={socialprofils.github}>Github</a>
+            <a href={socialprofils.github}>Instagram</a>
             </div>
-            <p className="copyright m-0">copyright {logotext}</p>
+            <p className="copyright m-0">copyright@ {logotext}</p>
           </div>
         </div>
       </header>
