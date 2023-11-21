@@ -18,6 +18,11 @@ export const Home = () => {
           <div className="text order-2 order-lg-1 d-lg-flex justify-content-center">
             <div className="align-self-center ">
               <div className="intro mx-auto text-center">
+              <div className="flex items-center justify-center p-4 m-4">
+              <img src={require('.//sarand.JPG')} alt="Pic" width={300} height={300}
+                className="rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out"
+              />
+              </div>
                 <h2 className="mb-1x">{introdata.title}</h2>
                 <h1 className="fluidz-48 mb-1x typewriter-text">
                   <Typewriter
@@ -37,6 +42,7 @@ export const Home = () => {
                   />
                 </h1>
                 <p className="mb-1x">{introdata.description}</p>
+                <div className="h-8"></div>
                 <div className="intro_btn-action pb-5">
                   <Link to="/portfolio" className="text_2">
                     <div id="button_h" className="ac_btn btn ">

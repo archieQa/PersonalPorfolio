@@ -4,6 +4,9 @@
     }
 }
 
+body {
+    background-image:"/assets/images/noise.jpg" ;
+}
 .page-enter {
     transform: translateY(100%);
 }
